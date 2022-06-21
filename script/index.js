@@ -22,7 +22,7 @@ function firstPlayer () {
             }
             
             localStorage.setItem('currentPlayer', currentPlayer)
-            window.location.href = '/game.html'
+            window.location.href = 'https://elle008.github.io/tic-tac-toe/game.html'
         })
     }
 }
