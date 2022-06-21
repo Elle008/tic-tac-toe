@@ -1,0 +1,49 @@
+@import 'title';
+@import 'game';
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: $bold;
+    text-align: center;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 5vmin;
+}
+p, li {
+    font: 500 4vmin $normal;
+}
+
+.button {
+    margin: 0 20px;
+    font-size: 6vmin;
+    padding: 15px 25px;
+    border: 2px solid transparent;
+    background-color: $green;
+    border-radius: 100px;
+    box-shadow: 0 5px $purple;
+    grid-area: button;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+
+    &:hover {
+        box-shadow: none;
+        border: 2px solid $purple ;
+        transform: translateY(5px);
+    }
+}

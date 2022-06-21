@@ -1,0 +1,23 @@
+@import 'variables';
+#title {
+    background-image: url(../assets/bg1.jpg);
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.title {
+    margin-bottom: 8vmin;
+    height: 60vmin;
+}
+
+.player-select {
+    display: none;
+    div {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    p {
+        padding: 20px 0;
+    }
+}

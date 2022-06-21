@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script type="module" src="/script/game.js" defer></script>
+    <script type="module" src="/script/styles.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <main>
+        <div class="column1">
+    
+            <h3 class="sub" data-yourturn>Your Turn</h3>
+            <img class="stars" src="./assets/stars.png" alt="stars" data-stars>
+            
+            
+            <div class="player" >
+                
+                <img class="player-icon" src="" alt="x or o icon" data-player-icon>
+                <p data-player-name></p>
+                <h1 class="draw" data-draw>DRAW</h1>
+            </div>
+
+            <div class="buttons">
+                <button class="button prev" data-prev><img class="icon" src="./assets/prev.svg" alt="previous"></button>
+                <button class="button reset" data-reset><img class="icon" src="./assets/reset.svg" alt="reset"></button>
+                <button class="button next" data-next><img class="icon" src="./assets/next.svg" alt="next"></button>
+            </div>
+
+
+        </div class="column2">
+        <div>
+            <div class="board" data-board></div>
+
+            <button class="button history" data-show-history> Show History </button>
+
+            <div id="history" data-history>
+                <h3>Moves</h3>
+                <ol data-moves-list>
+                    <button class="exit-modal" data-exit>x</button>
+                </ol>
+            </div>
+        </div>
+    
+    </main>
+</body>
+</html>
